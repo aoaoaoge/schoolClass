@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>schoolClass</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>loginAction</servlet-name>
+  	<servlet-class>com.ao.school.servlet.LoginAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>loginAction</servlet-name>
+  	<url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>loginCount</servlet-name>
+  	<servlet-class>com.ao.school.servlet.LogCount</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>loginCount</servlet-name>
+  	<url-pattern>/loginCount</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>loginOut</servlet-name>
+  	<servlet-class>com.ao.school.servlet.LogOut</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>loginOut</servlet-name>
+  	<url-pattern>/loginOut</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>addDepart</servlet-name>
+  	<servlet-class>com.ao.school.servlet.AddDepart</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>addDepart</servlet-name>
+  	<url-pattern>/addDepart</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>addTeacher</servlet-name>
+  	<servlet-class>com.ao.school.servlet.AddTeacher</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>addTeacher</servlet-name>
+  	<url-pattern>/addTeacher</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>addStudent</servlet-name>
+  	<servlet-class>com.ao.school.servlet.AddStudent</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>addStudent</servlet-name>
+  	<url-pattern>/addStudent</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>addProfess</servlet-name>
+  	<servlet-class>com.ao.school.servlet.AddProfess</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>addProfess</servlet-name>
+  	<url-pattern>/addProfess</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>allStudent</servlet-name>
+  	<servlet-class>com.ao.school.servlet.SelectAllStudents</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>allStudent</servlet-name>
+  	<url-pattern>/allStudents</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>queryTeacher</servlet-name>
+  	<servlet-class>com.ao.school.servlet.SelectTeacher</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>queryTeacher</servlet-name>
+  	<url-pattern>/selectTeacher</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>allTeacher</servlet-name>
+  	<servlet-class>com.ao.school.servlet.SelectAllTeacher</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>allTeacher</servlet-name>
+  	<url-pattern>/allTeachers</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>selectXb</servlet-name>
+  	<servlet-class>com.ao.school.servlet.SelectXb</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>selectXb</servlet-name>
+  	<url-pattern>/selectXb</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>selectDepart</servlet-name>
+  	<servlet-class>com.ao.school.servlet.SelectDepart</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>selectDepart</servlet-name>
+  	<url-pattern>/selectDepart</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>selectProfess</servlet-name>
+  	<servlet-class>com.ao.school.servlet.SelectProfess</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>selectProfess</servlet-name>
+  	<url-pattern>/selectProfess</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>selectCourse</servlet-name>
+  	<servlet-class>com.ao.school.servlet.SelectCourse</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>selectCourse</servlet-name>
+  	<url-pattern>/selectCourse</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>upDepart</servlet-name>
+  	<servlet-class>com.ao.school.servlet.UpDepart</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>upDepart</servlet-name>
+  	<url-pattern>/upDepart</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>upDateProfess</servlet-name>
+  	<servlet-class>com.ao.school.servlet.UpDateProfess</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>upDateProfess</servlet-name>
+  	<url-pattern>/upProfess</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>delDepart</servlet-name>
+  	<servlet-class>com.ao.school.servlet.DelDepart</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>delDepart</servlet-name>
+  	<url-pattern>/delDepart</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>delPro</servlet-name>
+  	<servlet-class>com.ao.school.servlet.DelPro</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>delPro</servlet-name>
+  	<url-pattern>/delPro</url-pattern>
+  </servlet-mapping>
+  
+  
+  <filter>
+  	<filter-name>logFilter</filter-name>
+  	<filter-class>com.ao.school.filter.LogFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>logFilter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  <session-config>
+  	<session-timeout>1000</session-timeout>
+  </session-config>
+  
+</web-app>
